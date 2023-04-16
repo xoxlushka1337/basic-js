@@ -1,6 +1,5 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
-transform([3, '--double-prev', { foo: 'bar' }]);
 function transform(arr) {
   let result;
   let newArr;
