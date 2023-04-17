@@ -13,7 +13,6 @@ function transform(arr) {
       if (newArr[i] === '--discard-next') {
         if (i === newArr.length - 1) {
           newArr.splice(i, 1);
-          console.log(newArr);
           return newArr;
         }
         result = newArr.slice(0, i) + ',' + newArr.slice(i + 2);
@@ -29,11 +28,10 @@ function transform(arr) {
         result = newArr.slice(0, i - 1) + ',' + arr.slice(i + 1);
         newArr = result;
       }
-      console.log(arr[i]);
+
       if (newArr[i] === '--double-next') {
         if (i == newArr.length - 1) {
           newArr.splice(i, 1);
-          console.log(newArr);
           return newArr;
         }
 
@@ -42,13 +40,13 @@ function transform(arr) {
       }
 
       if (newArr[i] === '--double-prev') {
+        console.log(newArr);
         if (i === 0) {
+          console.log(newArr);
           newArr.splice(i, 1);
           return newArr;
         }
         newArr = newArr.slice(0, i) + ',' + newArr[i - 1] + ',' + newArr.slice(i + 1);
-
-        console.log(newArr);
       }
     }
     return arr;
@@ -60,8 +58,3 @@ function transform(arr) {
 module.exports = {
   transform,
 };
-
-// console.log(arr);
-// return;
-// return `'arr' parameter must be an instance of the Array!`;
-// console.log("'arr' parameter must be an instance of the Array!");
