@@ -44,34 +44,6 @@ const chainMaker = {
   },
 };
 
-// chainMaker
-//   .addLink('GHI')
-//   .addLink(null)
-//   .reverseChain()
-//   .addLink(333)
-//   .reverseChain()
-//   .reverseChain()
-//   .addLink(0)
-//   .reverseChain()
-//   .reverseChain()
-//   .addLink('GHI')
-//   .finishChain();
-
-// console.log(
-//   chainMaker
-//     .addLink('8.963')
-//     .reverseChain()
-//     .reverseChain()
-//     .reverseChain()
-//     .reverseChain()
-//     .addLink({ 0: 'first', 1: 'second', length: 2 })
-//     .reverseChain()
-//     .addLink(3.14)
-//     .addLink('DEF')
-//     .reverseChain()
-//     .finishChain(),
-// );
-
 module.exports = {
   chainMaker,
 };
